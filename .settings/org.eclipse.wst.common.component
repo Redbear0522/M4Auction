@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
+    <wb-module deploy-name="m4auc">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="m4auc"/>
+        <property name="java-output-path" value="/m4auc/build/classes"/>
+=======
+    <wb-module deploy-name="auction">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <property name="context-root" value="auction"/>
+        <property name="java-output-path" value="/auction/build/classes"/>
+>>>>>>> 692b283f4bff172ab4f6a2f39dca655088613fa8
+    </wb-module>
+</project-modules>
