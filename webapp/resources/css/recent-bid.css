@@ -1,0 +1,62 @@
+/* =========================================
+   Recent Bid Page - 최근 낙찰된 상품 목록 페이지
+   ========================================= */
+
+/* -----------------------------------------
+   기본 레이아웃 스타일
+   ----------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* -----------------------------------------
+   제목 영역 스타일
+   ----------------------------------------- */
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* -----------------------------------------
+   낙찰 상품 아이템 스타일
+   ----------------------------------------- */
+.win-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* 낙찰 상품 이미지 */
+.win-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------
+   낙찰 상품 정보 영역
+   ----------------------------------------- */
+.win-info {
+    flex-grow: 1;
+}
+
+/* 상품명 스타일 */
+.win-info strong {
+    font-size: 18px;
+}
+
+/* 상품 상세 정보 (작가, 낙찰가, 낙찰자) */
+.win-info span {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}

@@ -1,0 +1,124 @@
+/* ===================================
+   Common Utility Classes
+   충돌 방지를 위해 u- 접두사 사용
+   =================================== */
+
+/* Display utilities */
+.u-hidden { display: none !important; }
+.u-block { display: block !important; }
+.u-inline-block { display: inline-block !important; }
+.u-flex { display: flex !important; }
+.u-inline-flex { display: inline-flex !important; }
+
+/* Flexbox utilities */
+.u-flex-gap-8 { gap: 8px; }
+.u-flex-gap-12 { gap: 12px; }
+.u-flex-gap-16 { gap: 16px; }
+.u-flex-center { justify-content: center; align-items: center; }
+.u-flex-between { justify-content: space-between; }
+.u-flex-end { justify-content: flex-end; }
+
+/* Text alignment */
+.u-text-left { text-align: left !important; }
+.u-text-center { text-align: center !important; }
+.u-text-right { text-align: right !important; }
+
+/* Margin utilities */
+.u-mt-8 { margin-top: 8px !important; }
+.u-mt-12 { margin-top: 12px !important; }
+.u-mt-16 { margin-top: 16px !important; }
+.u-mt-20 { margin-top: 20px !important; }
+.u-mt-24 { margin-top: 24px !important; }
+.u-mb-8 { margin-bottom: 8px !important; }
+.u-mb-12 { margin-bottom: 12px !important; }
+.u-mb-16 { margin-bottom: 16px !important; }
+.u-mb-20 { margin-bottom: 20px !important; }
+.u-mb-24 { margin-bottom: 24px !important; }
+
+/* Padding utilities */
+.u-p-12 { padding: 12px !important; }
+.u-p-16 { padding: 16px !important; }
+.u-p-20 { padding: 20px !important; }
+.u-p-24 { padding: 24px !important; }
+.u-px-12 { padding-left: 12px !important; padding-right: 12px !important; }
+.u-px-24 { padding-left: 24px !important; padding-right: 24px !important; }
+.u-py-6 { padding-top: 6px !important; padding-bottom: 6px !important; }
+.u-py-12 { padding-top: 12px !important; padding-bottom: 12px !important; }
+
+/* Width utilities */
+.u-w-20 { width: 20% !important; }
+.u-w-25 { width: 25% !important; }
+.u-w-40 { width: 40% !important; }
+.u-w-50 { width: 50% !important; }
+.u-w-full { width: 100% !important; }
+
+/* Font utilities */
+.u-font-9 { font-size: 9px !important; }
+.u-font-12 { font-size: 12px !important; }
+.u-font-14 { font-size: 14px !important; }
+.u-font-16 { font-size: 16px !important; }
+
+/* Color utilities */
+.u-color-gray { color: #6b7280 !important; }
+.u-color-dark { color: #374151 !important; }
+.u-color-white { color: white !important; }
+
+/* Background utilities */
+.u-bg-primary { background-color: #c9961a !important; }
+.u-bg-gray-light { background-color: #f3f4f6 !important; }
+.u-bg-white { background-color: white !important; }
+
+/* Border utilities */
+.u-border-none { border: none !important; }
+.u-rounded-4 { border-radius: 4px !important; }
+.u-rounded-6 { border-radius: 6px !important; }
+.u-rounded-8 { border-radius: 8px !important; }
+
+/* Cursor */
+.u-cursor-pointer { cursor: pointer !important; }
+
+/* Button base styles */
+.u-btn-base {
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.u-btn-primary {
+    padding: 6px 12px;
+    background: #c9961a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.u-btn-primary:hover {
+    background: #b8881a;
+}
+
+.u-btn-secondary {
+    padding: 6px 12px;
+    background: #f3f4f6;
+    color: #374151;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.u-btn-secondary:hover {
+    background: #e5e7eb;
+}
+
+.u-btn-large {
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+/* Flex item utilities */
+.u-flex-1 { flex: 1 !important; }
+.u-flex-shrink-0 { flex-shrink: 0 !important; }

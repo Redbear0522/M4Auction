@@ -1,0 +1,337 @@
+/* ===================================
+   Product List Page Specific Styles
+   접두사: pl- 사용하여 충돌 방지
+   =================================== */
+
+/* 기존 스타일 태그에서 이동 */
+.pl-body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f9fa;
+    padding-top: 120px;
+}
+
+.pl-page-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.pl-page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pl-page-header p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pl-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pl-content-wrapper {
+    padding: 40px 0;
+}
+
+.pl-filter-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.pl-filter-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    gap: 20px;
+    align-items: end;
+}
+
+.pl-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.pl-form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.pl-form-group input,
+.pl-form-group select {
+    padding: 12px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.pl-form-group input:focus,
+.pl-form-group select:focus {
+    outline: none;
+    border-color: #c9961a;
+}
+
+.pl-search-btn {
+    background: linear-gradient(135deg, #c9961a 0%, #d4af37 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: fit-content;
+}
+
+.pl-search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 150, 26, 0.3);
+}
+
+.pl-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pl-results-count {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.pl-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.pl-product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.pl-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.pl-product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pl-product-info {
+    padding: 20px;
+}
+
+.pl-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+.pl-product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.pl-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pl-detail-label {
+    color: #666;
+    font-size: 14px;
+}
+
+.pl-detail-value {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.pl-price-info {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.pl-price-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.pl-price-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #c9961a;
+}
+
+.pl-time-left {
+    background: #fee;
+    color: #c44;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pl-status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pl-status-active {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.pl-status-waiting {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.pl-btn-primary {
+    background: linear-gradient(135deg, #c9961a 0%, #d4af37 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.pl-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 150, 26, 0.3);
+}
+
+.pl-btn-secondary {
+    background: #f5f5f5;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.pl-btn-secondary:hover {
+    background: #e8e8e8;
+}
+
+.pl-empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.pl-empty-icon {
+    font-size: 64px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.pl-empty-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.pl-empty-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 섹션 표시/숨김 */
+.pl-section-hidden {
+    display: none;
+}
+
+/* 버튼 정렬 */
+.pl-button-right {
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+/* 테이블 열 너비 */
+.pl-col-40 { width: 40%; }
+.pl-col-20 { width: 20%; }
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+    .pl-filter-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .pl-search-btn {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .pl-page-header h1 {
+        font-size: 32px;
+    }
+    
+    .pl-filter-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .pl-search-btn {
+        grid-column: span 1;
+    }
+    
+    .pl-product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pl-product-grid {
+        grid-template-columns: 1fr;
+    }
+}

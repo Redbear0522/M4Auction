@@ -1,0 +1,82 @@
+/* ===================================
+   Index Page Specific Styles
+   접두사: idx- 사용하여 충돌 방지
+   =================================== */
+
+/* Hero Section Background Images */
+.idx-hero-slide-1 {
+    background-image: url('https://images.unsplash.com/photo-1513116476489-7635e79feb27?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
+}
+
+.idx-hero-slide-2 {
+    background-image: url('https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
+}
+
+.idx-hero-slide-3 {
+    background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
+}
+
+/* Wishlist Button Styles - 기존 스타일 태그에서 이동 */
+.artwork-image {
+    position: relative;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.wishlist-btn:hover {
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.wishlist-btn i {
+    font-size: 18px;
+    color: #4b5563;
+    transition: color 0.3s ease;
+}
+
+.wishlist-btn:hover i {
+    color: #c9961a;
+}
+
+.wishlist-btn.wishlisted i {
+    color: #c9961a;
+    font-weight: 900;
+}
+
+/* VIP Section */
+.idx-vip-section {
+    display: none;
+}
+
+/* Mileage Display */
+.idx-mileage-unit {
+    font-size: 16px;
+    color: #6b7280;
+    margin-left: 4px;
+}
+
+/* Action Buttons Container */
+.idx-action-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+/* 버튼은 공통 유틸리티 클래스 사용 */
